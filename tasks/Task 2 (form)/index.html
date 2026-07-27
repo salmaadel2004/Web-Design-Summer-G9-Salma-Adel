@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form autocomplete="off">
+        <fieldset>
+            <legend><b>Employee Details</b></legend>
+            <br>
+            <div>
+                <label for="firstname">First Name :</label>
+                <input type="text" id="firstname" name="firstname" pattern="[A-Za-z]+" title="please enter letters only"
+                    required>
+            </div>
+            <br>
+            <div>
+                <label for="lastname">Last Name :</label>
+                <input type="text" id="lastname" name="lastname" pattern="[A-Za-z]+" title="please enter letters only"
+                    minlength="5">
+            </div>
+            <br>
+            <div>
+                <label for="mobile">Mobile Number :</label>
+                <input type="tel" id="mobile" name="mobile" pattern="01[0125][0-9]{8}" maxlength="11"
+                    title="please enter numbers only (must contain 11 digits)" l>
+            </div>
+            <br>
+            <div>
+                <label for="employeeid">Employee ID :</label>
+                <input type="text" id="employeeid" name="employeeid">
+            </div>
+            <br>
+            <div>
+                <label for="designation">Designation :</label>
+                <input type="text" id="designation" name="designation">
+            </div>
+            <br>
+            <div>
+                <label for="course">Course :</label>
+                <input list="courses" id="course" name="course">
+                <datalist id="courses">
+                    <option value="Frontend">
+                    <option value="Backend">
+                    <option value="JavaScript">
+                    <option value="PHP">
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="image">Upload Image :</label>
+                <input type="file" id="image" name="image" accept="image/png">
+            </div>
+            <br>
+            <div>
+                <label for="comment">Comment :</label>
+                <textarea name="comment" id="comment" required></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="date">Date of Birth :</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender :</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+            </div>
+            <br>
+            <div>
+                <label for="track">Track :</label>
+                <input type="checkbox" id="frontend" name="track" value="Frontend" checked>
+                <label for="frontend">Frontend</label>
+                <input type="checkbox" id="backend" name="track" value="Backend">
+                <label for="backend">Backend</label>
+                <input type="checkbox" id="network" name="track" value="Network">
+                <label for="network">Network</label>
+                <input type="checkbox" id="devops" name="track" value="DevOps">
+                <label for="devops">DevOps</label>
+            </div>
+            <br>
+            <div>
+                <label for="range">Range :</label>
+                <input type="range" name="range" min="10" max="100">
+            </div>
+            <br>
+            <div>
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
