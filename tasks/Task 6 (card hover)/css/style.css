@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.option1{
+    width: 27%;
+    height: 130px;
+    background: #EEF5F6;
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.bg-teal{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: teal;
+    top: -165px;
+    right: -165px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.option1:hover .bg-teal{
+    transform: scale(4);
+}
+.icon1{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 13px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 3;
+}
+.option1-content{
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+}
+.option1-content h2{
+    margin: 10px 0;
+}
+.option1-content p{
+    color: rgb(133, 128, 128);
+}
+.option1:hover .option1-content h2, .option1:hover .option1-content p{
+    color: white;
+}
+.option2{
+    margin: 3% auto;
+    padding-top: 30px;
+    height: 180px;
+    width: 25%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid lightgray;
+}
+.bg-purple{
+    position: absolute;
+    width: 50%;
+    transition: 1s;
+    height: 100%;
+    background-color: rgb(167, 39, 103);
+    transform: skewX(10deg);
+    top: 0;
+    left: 110%;
+}
+.option2:hover .bg-purple{
+    left: 95%;
+}
+.margin-left{
+    margin-left: 25px;
+}
+.option2 h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.option2 i{
+    font-size: 30px;
+}
+.option2 p{
+    width: 85%;
+    color: rgb(133, 128, 128);
+}
+.icon2{
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.icon2 i{
+    font-size: 12px;
+}
